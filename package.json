@@ -10,20 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shanza211/MA-Online-Stor-LLC.git"
+    "url": "git+https://github.com/shanza211/fbmartllc.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/shanza211/MA-Online-Stor-LLC/issues"
+    "url": "https://github.com/shanza211/fbmartllc/issues"
   },
-  "homepage": "https://github.com/shanza211/MA-Online-Stor-LLC#readme",
+  "homepage": "https://github.com/shanza211/fbmartllc#readme",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "mongoose": "^9.7.0"
+    "express": "^5.2.1"
   }
 }
