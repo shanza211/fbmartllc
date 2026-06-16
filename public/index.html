@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBMart LLC - Fresh & Quality Food</title>
+    <meta name="description" content="FBMart LLC provides fresh and premium-quality food products with reliable service and customer satisfaction.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-offset="100">
+
+    <!-- Header/Navbar -->
+    <header class="fixed-top shadow-sm" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3" id="main-navbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-green" href="#">
+                    <i class="fa-solid fa-leaf me-2"></i>FBMart LLC
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <button class="btn btn-outline-green position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
+                                    0
+                                    <span class="visually-hidden">items in cart</span>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content fade-in-up">
+                    <h1 class="display-4 fw-bold text-dark mb-4">Fresh & Quality Food Products Delivered to Your Doorstep</h1>
+                    <p class="lead text-muted mb-4">Discover premium food items selected with care for your family. Making grocery shopping simple, affordable, and convenient.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-green btn-lg px-4 rounded-pill">Shop Now</a>
+                        <a href="#products" class="btn btn-outline-dark btn-lg px-4 rounded-pill">Explore Products</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 hero-image fade-in-up delay-1">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh Groceries" class="img-fluid rounded-4 shadow-lg border-green">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-in-up">
+                <h6 class="text-green fw-bold text-uppercase tracking-wide">Our Products</h6>
+                <h2 class="display-6 fw-bold">Freshly Picked For You</h2>
+                <div class="divider mx-auto mt-3 bg-green"></div>
+            </div>
+            
+            <div class="row g-4" id="products-container">
+                <!-- Products will be dynamically injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-in-up">
+                <h2 class="display-6 fw-bold">Why Choose FBMart LLC</h2>
+                <div class="divider mx-auto mt-3 bg-green"></div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-sm-6 fade-in-up delay-1">
+                    <div class="feature-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                        <div class="icon-wrapper bg-light-green text-green mb-3 mx-auto">
+                            <i class="fa-solid fa-apple-whole fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Fresh & High-Quality</h5>
+                        <p class="text-muted small mb-0">Premium products selected with care.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in-up delay-2">
+                    <div class="feature-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                        <div class="icon-wrapper bg-light-green text-green mb-3 mx-auto">
+                            <i class="fa-solid fa-truck-fast fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Fast Delivery</h5>
+                        <p class="text-muted small mb-0">Quick and reliable delivery to your doorstep.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in-up delay-3">
+                    <div class="feature-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                        <div class="icon-wrapper bg-light-green text-green mb-3 mx-auto">
+                            <i class="fa-solid fa-shield-halved fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Secure Payments</h5>
+                        <p class="text-muted small mb-0">100% secure payment gateways.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in-up delay-4">
+                    <div class="feature-card p-4 rounded-4 shadow-sm h-100 bg-white">
+                        <div class="icon-wrapper bg-light-green text-green mb-3 mx-auto">
+                            <i class="fa-solid fa-face-smile fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Satisfaction Guarantee</h5>
+                        <p class="text-muted small mb-0">Your happiness is our top priority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-green text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="About FBMart LLC" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 ps-lg-5 fade-in-up delay-1">
+                    <h6 class="text-light fw-bold text-uppercase tracking-wide mb-2">Our Story</h6>
+                    <h2 class="display-5 fw-bold mb-4">About FBMart LLC</h2>
+                    <p class="lead mb-4">FBMart LLC provides fresh and premium-quality food products with reliable service and customer satisfaction. Our mission is to make grocery shopping simple, affordable, and convenient.</p>
+                    <p class="mb-4">We are dedicated to providing customers with fresh, high-quality food products at affordable prices. We prioritize quality, freshness, and excellent customer service to ensure the best shopping experience for every customer.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-check-circle me-2"></i> Premium Quality Products</li>
+                        <li class="mb-2"><i class="fa-solid fa-check-circle me-2"></i> Affordable Prices</li>
+                        <li class="mb-2"><i class="fa-solid fa-check-circle me-2"></i> Excellent Customer Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-in-up">
+                <h6 class="text-green fw-bold text-uppercase tracking-wide">Get In Touch</h6>
+                <h2 class="display-6 fw-bold">Contact Us</h2>
+                <div class="divider mx-auto mt-3 bg-green"></div>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-5 fade-in-up">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 bg-white">
+                        <div class="card-body p-4 p-md-5">
+                            <h4 class="fw-bold mb-4">Contact Information</h4>
+                            <p class="text-muted mb-5">Have questions or need help? Reach out to us using the contact details below.</p>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="icon-wrapper-sm bg-light-green text-green me-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Address</h6>
+                                    <p class="text-muted mb-0">FBMart LLC, United States</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="icon-wrapper-sm bg-light-green text-green me-3">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Phone</h6>
+                                    <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="icon-wrapper-sm bg-light-green text-green me-3">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Email</h6>
+                                    <p class="text-muted mb-0">info@fbmartllc.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 fade-in-up delay-1">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 bg-white">
+                        <div class="card-body p-4 p-md-5">
+                            <h4 class="fw-bold mb-4">Send Us a Message</h4>
+                            <div id="form-alert" class="alert d-none" role="alert"></div>
+                            
+                            <form id="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required placeholder="John Doe">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required placeholder="john@example.com">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" required placeholder="+1 (555) 000-0000">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required placeholder="How can we help you?"></textarea>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-green w-100 py-3 rounded-pill fw-bold" id="submit-btn">
+                                            <span>Send Message</span>
+                                            <div class="spinner-border spinner-border-sm text-light ms-2 d-none" role="status" id="submit-spinner">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-green">
+                        <i class="fa-solid fa-leaf me-2"></i>FBMart LLC
+                    </h5>
+                    <p>Providing customers with fresh, high-quality food products at affordable prices.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-white">Quick Links</h5>
+                    <p><a href="#home" class="text-white text-decoration-none footer-link">Home</a></p>
+                    <p><a href="#products" class="text-white text-decoration-none footer-link">Products</a></p>
+                    <p><a href="#about" class="text-white text-decoration-none footer-link">About Us</a></p>
+                    <p><a href="#contact" class="text-white text-decoration-none footer-link">Contact Us</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-white">Contact</h5>
+                    <p><i class="fa-solid fa-home me-3"></i> FBMart LLC, United States</p>
+                    <p><i class="fa-solid fa-envelope me-3"></i> info@fbmartllc.com</p>
+                    <p><i class="fa-solid fa-phone me-3"></i> +1 (555) 123-4567</p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-white">Follow Us</h5>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="#" class="text-white bg-green rounded-circle p-2 social-icon"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+                        <a href="#" class="text-white bg-green rounded-circle p-2 social-icon"><i class="fa-brands fa-twitter fa-fw"></i></a>
+                        <a href="#" class="text-white bg-green rounded-circle p-2 social-icon"><i class="fa-brands fa-instagram fa-fw"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">
+                        &copy; 2026 FBMart LLC. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header bg-light">
+            <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel"><i class="fa-solid fa-cart-shopping me-2 text-green"></i>Your Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100">
+            <div id="cart-items" class="flex-grow-1 overflow-auto pe-2">
+                <!-- Cart items will be injected here -->
+                <div class="text-center text-muted mt-5" id="empty-cart-msg">
+                    <i class="fa-solid fa-basket-shopping fa-3x mb-3 text-light"></i>
+                    <p>Your cart is empty.</p>
+                    <button class="btn btn-outline-green btn-sm" data-bs-dismiss="offcanvas" onclick="location.href='#products'">Start Shopping</button>
+                </div>
+            </div>
+            <div class="cart-footer pt-3 mt-3 border-top">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-bold">Subtotal:</span>
+                    <span class="fw-bold fs-5 text-green" id="cart-total">$0.00</span>
+                </div>
+                <button class="btn btn-green w-100 py-3 rounded-3 fw-bold" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
